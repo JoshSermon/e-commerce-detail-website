@@ -3,7 +3,7 @@ import Link from "next/link";
 export const Navbar = () => {
   return (
   <nav>
-    <div className="div">
+    <div className="container mx-auto flex items-center justify-between px-4 py-4">
         <Link href="/" className="flex items-center space-x-2">
             Arvo
         </Link>
