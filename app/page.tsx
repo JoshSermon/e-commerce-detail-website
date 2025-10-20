@@ -1,6 +1,7 @@
 import Image from "next/image";
-import styles from "./page.module.css";
 import { stripe } from "@/lib/stripe";
+import { Button} from "@/components/ui/button";
+import Link from "next/link";
 
 export default async function Home() {
   const products = await stripe.products.list({
@@ -21,7 +22,15 @@ export default async function Home() {
                     <p> 
                         Creating and delivering high quality digital products for you.
                     </p>
+                    <Button 
+                    asChild
+                    variant="default"
+                    className="inline-flex items-center justify-center rounded-full px-6 py-3 bg-black text-white"
+                    >
+                      <Link href="/products" className="inline-flex items-center justify-center rounded-full px-6 py-3">See Products</Link>
+                    </Button>
                   </div>
+                <Image src={products.data[0].images[0]} alt="Hero Image" width={450} height={450} />
               </div>
             </section>
     </div>
