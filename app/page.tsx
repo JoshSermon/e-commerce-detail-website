@@ -20,7 +20,7 @@ export default async function Home() {
                         Welcome to Arvo!
                     </h2>
                     <p> 
-                        Creating and delivering high quality digital products for you.
+                        Creating and delivering high quality digital products for you. Instantly. 
                     </p>
                     <Button 
                     asChild
