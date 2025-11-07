@@ -18,7 +18,7 @@ export default async function Home() {
               <div className="div">
                 <div className="div">
                     <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
-                        Welcome to Arvo!
+                        Welcome to Arvo! Happy to see you here.
                     </h2>
                     <p> 
                         Creating and delivering high quality digital products for you.
