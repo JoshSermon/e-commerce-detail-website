@@ -1,5 +1,7 @@
+"use client";
+
 import Stripe from "stripe";
-import { Card } from "@/components/ui/card";
+import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
@@ -35,7 +37,7 @@ export const Carousel = ({ products }: Props) => {
           />
         </div>
       )}
-      {/* <CardContent className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50">
+      <CardContent className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50">
         <CardTitle className="text-3xl font-bold text-white mb-2">
           {currentProduct.name}
         </CardTitle>
@@ -44,7 +46,7 @@ export const Carousel = ({ products }: Props) => {
             ${(price.unit_amount / 100).toFixed(2)}
           </p>
         )}
-      </CardContent> */}
+      </CardContent>
     </Card>
   );
 };
